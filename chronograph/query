@@ -1,0 +1,1 @@
+SELECT sum("value") AS "sum" FROM "v3_stats_new"."autogen"."s3_http_user_agent_count" WHERE time > :dashboardTime: AND time < :upperDashboardTime: GROUP BY "agent" FILL(null)
